@@ -1,17 +1,9 @@
-@import './fonts.scss';
-
 /* drop default styles */
 
 /*=================================Variables=============================*/
-$main-font-family: 'TT Hoves', sans-serif;
-$accent-color: #383838;
-$font-dark-color: #333333;
-$font-light-color: #bdbdbd;
-$font-lighter-color: #f3f3f3;
-$bg-section-color: #fbfbfb;
-$bg-footer-color: #2c2c2c;
+@import './variable.scss';
 
-/* --transition-for-all: all cubic-bezier(0.075, 0.82, 0.165, 1) 1500ms;*/
+
 
 html {
     box-sizing: border-box;
@@ -30,7 +22,7 @@ body {
     font-family: $main-font-family;
     font-size: 14px;
 
-    color: $font-dark-color;
+    color: $accent-color;
     letter-spacing: 0.04em;
     max-width: 100%;
 }
