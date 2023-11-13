@@ -88,3 +88,24 @@ nav {
         padding: 0 15px;
     }
 }
+
+@media(min-width: 320px) {
+    .container {
+        max-width: 768px;
+        padding: 0 15px;
+    }
+}
+
+@media(min-width:769px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 65px;
+    }
+}
+
+@media(min-width:1025px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 225px;
+    }
+}
