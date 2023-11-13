@@ -1,0 +1,79 @@
+@import '../../variable.scss';
+
+@media(min-width: $media-min-width-mobile) {
+    .appHeader {
+        position: relative;
+        padding-top: 7px;
+
+        .logo {
+            display: block;
+
+            width: 96px;
+            height: 43px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+
+        .burgerMenu {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+
+            width: 30px;
+            height: 16px;
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+}
+
+@media(min-width:$media-min-width-tablet) {
+    .appHeader {
+        padding-top: 27px;
+
+        .logo {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .burgerMenu {
+            top: 26px;
+            right: 67px;
+        }
+    }
+}
+
+@media(min-width:$media-min-width-desktop) {
+    .appHeader {
+        display: flex;
+        align-items: center;
+        // justify-content: flex-start;
+        padding-top: 31px;
+
+        .logo {
+            width: 158px;
+            height: 71px;
+
+            margin-right: 38px;
+        }
+
+        .burgerMenu {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            li:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
