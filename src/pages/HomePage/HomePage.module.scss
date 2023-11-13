@@ -2,6 +2,41 @@
 
 .homePage {
     width: 100%;
-    height: 100vh;
-    background-color: $main-bg-color;
+    background-color: $secondary-bg-color;
+    background-image: url('../../images/png/plate-flour.png'),
+        url('../../images/png/donuts.png'),
+        url('../../images/svg/bg-top.svg'),
+        url('../../images/svg/bg-bottom.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+}
+
+@media(min-width: $media-min-width-mobile) {
+    .homePage {
+        height: 3317px;
+        background-position: bottom -35px right -25px, top -40px left -30px, top center, bottom -100px center;
+        background-size: 113px auto, 42% auto, contain, contain;
+    }
+}
+
+@media(min-width: $media-min-width-tablet) {
+    .homePage {
+        height: 2465px;
+        background-position: bottom -38px right -60px, top -35px right 137px, top center, bottom -100px center;
+        background-size: 207px auto, 378px auto, contain, contain;
+    }
+}
+
+@media(min-width: $media-min-width-desktop) {
+    .homePage {
+        height: 3170px;
+        background-image: url('../../images/png/spoon.png'),
+            url('../../images/png/plate-flour.png'),
+            url('../../images/png/donuts.png'),
+            url('../../images/svg/bg-top.svg'),
+            url('../../images/svg/bg-bottom.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: top 163px left -122px, bottom -134px right -43px, top -170px right -75px, top center, bottom -100px center;
+        background-size: 264px auto, 362px auto, 795px auto, contain, contain;
+    }
 }

@@ -1,9 +1,25 @@
+// Fonts
 $main-font-family: 'Montserrat', sans-serif;
 $secondary-font-family: 'Caveat Brush', cursive;
 
+// Colors
 $accent-color: #2E2520;
 $buttons-color: #AB816C;
 $main-bg-color: #FEF3E4;
 $secondary-bg-color: #fffffa;
 
+// Breakpoints max-width
+$media-min-width-mobile: 320px;
+$media-min-width-tablet: 769px;
+$media-min-width-desktop: 1025px;
+
+$container-max-width-mobile: 768px;
+$container-max-width-tablet: 1024px;
+$container-max-width-desktop: 1280px;
+
+$container-padding-mobile: 15px;
+$container-padding-tablet: 65px;
+$container-padding-desktop: 225px;
+
+//css animation
 $transition-for-all: all cubic-bezier(0.075, 0.82, 0.165, 1) 1500ms;
