@@ -15,14 +15,14 @@
     .homePage {
         height: 3317px;
         background-position: bottom -35px right -25px, top -40px left -30px, top center, bottom -100px center;
-        background-size: 113px auto, 42% auto, contain, contain;
+        background-size: 113px auto, 130px auto, contain, contain;
     }
 }
 
 @media(min-width: $media-min-width-tablet) {
     .homePage {
         height: 2465px;
-        background-position: bottom -38px right -60px, top -35px right 137px, top center, bottom -100px center;
+        background-position: bottom -38px right -60px, top -35px left 254px, top center, bottom -100px center;
         background-size: 207px auto, 378px auto, contain, contain;
     }
 }
