@@ -1,12 +1,12 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 
-interface ISectionProps {
-    title: string,
-    children: ReactNode
-}
+import { ISectionProps } from "types";
+
+import s from './Section.module.scss';
+
 const Section: FC<ISectionProps> = ({ title, children }) => {
-    return <section>
-        <h2>{title}</h2>
+    return <section className={s.section}>
+        <h2 >{title}</h2>
         {children}
     </section>
 }
