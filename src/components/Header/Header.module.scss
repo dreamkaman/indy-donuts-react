@@ -4,6 +4,7 @@
     .appHeader {
         position: relative;
         padding-top: 7px;
+        margin-bottom: 33px;
 
         .logo {
             display: block;
@@ -13,8 +14,6 @@
 
             margin-left: auto;
             margin-right: auto;
-
-
         }
 
         .burgerMenu {
@@ -28,6 +27,10 @@
 
         .menu {
             display: none;
+
+            a {
+                white-space: nowrap;
+            }
         }
     }
 }
@@ -35,6 +38,7 @@
 @media(min-width:$media-min-width-tablet) {
     .appHeader {
         padding-top: 27px;
+        margin-bottom: 10px;
 
         .logo {
             margin-left: 0;
@@ -54,6 +58,7 @@
         align-items: center;
         // justify-content: flex-start;
         padding-top: 31px;
+        margin-bottom: 57px;
 
         .logo {
             width: 158px;
@@ -70,6 +75,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
+
+            font-size: 18px;
 
             li:not(:last-child) {
                 margin-right: 20px;
