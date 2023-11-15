@@ -11,7 +11,6 @@ export interface IButtonProps {
 }
 
 export interface ISectionProps {
-    title: string,
     children: ReactNode
 }
 
@@ -21,5 +20,6 @@ export interface IReadMoreProps {
 }
 
 export interface IParagraph {
+    title: string,
     text: string;
 }
