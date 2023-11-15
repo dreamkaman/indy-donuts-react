@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 
 export interface IGetSvg {
     name: string;
@@ -13,4 +13,13 @@ export interface IButtonProps {
 export interface ISectionProps {
     title: string,
     children: ReactNode
+}
+
+export interface IReadMoreProps {
+    isExtended: boolean,
+    onClick: Dispatch<SetStateAction<boolean>>
+}
+
+export interface IParagraph {
+    text: string;
 }
