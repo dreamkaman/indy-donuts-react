@@ -1,0 +1,18 @@
+@import '../../../variable.scss';
+
+@media(min-width: $media-min-width-mobile) {
+    .readMoreBtn {
+        border: none;
+
+        font-family: $secondary-font-family;
+        font-size: 18px;
+        line-height: 360%;
+
+        color: $buttons-color;
+        background-color: transparent;
+    }
+}
+
+@media(min-width:$media-min-width-tablet) {}
+
+@media(min-width:$media-min-width-desktop) {}

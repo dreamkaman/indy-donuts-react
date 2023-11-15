@@ -76,17 +76,6 @@
             margin-bottom: 33px;
         }
 
-        .socialMediasList {
-
-            .socialMediasListItem {
-
-                .iconTwitter {}
-
-                .iconInstagram {}
-
-                .iconFacebook {}
-            }
-        }
     }
 }
 
@@ -105,11 +94,11 @@
 
             .socialMediasListItem {
 
-                .iconTwitter {}
-
-                .iconInstagram {}
-
-                .iconFacebook {}
+                &:hover .iconTwitter,
+                &:hover .iconInstagram,
+                &:hover .iconFacebook {
+                    fill: $buttons-color;
+                }
             }
         }
     }
