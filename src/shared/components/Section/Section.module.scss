@@ -1,19 +1,32 @@
 @import '../../../variable.scss';
 
 
-@media(min-width: $media-min-width-mobile) {
+@media screen and (min-width: $media-min-width-mobile) {
     .section {
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
 
-        max-width: 500px;
+        max-width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
 
 }
 
-@media(min-width:$media-min-width-tablet) {}
+@media screen and (min-width: $media-min-width-tablet) {
+    .section {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-around;
 
-@media(min-width:$media-min-width-desktop) {}
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: $media-min-width-desktop) {
+    .section {
+        max-width: 1000px;
+    }
+}

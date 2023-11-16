@@ -1,11 +1,11 @@
 import { FC } from "react";
 
-interface IPictureProps {
-    imgPath: string;
-    imgAlt: string;
-}
+import { IPictureProps } from "types";
+
+import s from './Picture.module.scss';
+
 const Picture: FC<IPictureProps> = ({ imgPath, imgAlt }) => {
-    return <img src={imgPath} alt={imgAlt} />
+    return <img src={imgPath} alt={imgAlt} className={s.picture} />
 }
 
 export default Picture;

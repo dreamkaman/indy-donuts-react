@@ -83,7 +83,7 @@ nav {
 }
 
 /*============================Break points=================================================*/
-@media(min-width: $media-min-width-mobile) {
+@media screen and (min-width: $media-min-width-mobile) {
     .container {
         max-width: $container-max-width-mobile;
         padding: 0 $container-padding-mobile;
@@ -92,7 +92,7 @@ nav {
     }
 }
 
-@media(min-width:$media-min-width-tablet) {
+@media screen and (min-width:$media-min-width-tablet) {
     .container {
         max-width: $container-max-width-tablet;
         padding: 0 $container-padding-tablet;
@@ -101,7 +101,7 @@ nav {
     }
 }
 
-@media(min-width:$media-min-width-desktop) {
+@media screen and (min-width:$media-min-width-desktop) {
     .container {
         max-width: $container-max-width-desktop;
         padding: 0 $container-padding-desktop;

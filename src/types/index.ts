@@ -23,3 +23,8 @@ export interface IParagraph {
     title: string,
     text: string;
 }
+
+export interface IPictureProps {
+    imgPath: string;
+    imgAlt: string;
+}
