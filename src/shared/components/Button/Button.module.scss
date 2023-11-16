@@ -10,7 +10,7 @@
     background-color: $buttons-color;
 }
 
-@media(min-width: $media-min-width-mobile) {
+@media screen and (min-width: $media-min-width-mobile) {
     .button {
         min-width: 145px;
         min-height: 40px;
@@ -19,9 +19,9 @@
     }
 }
 
-@media(min-width:$media-min-width-tablet) {}
+@media screen and (min-width: $media-min-width-tablet) {}
 
-@media(min-width:$media-min-width-desktop) {
+@media screen and (min-width:$media-min-width-desktop) {
     .button {
         min-width: 158px;
         min-height: 45px;

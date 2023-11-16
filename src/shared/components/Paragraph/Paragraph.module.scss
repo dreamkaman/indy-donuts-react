@@ -1,8 +1,8 @@
 @import '../../../variable.scss';
 
-@media(min-width: $media-min-width-mobile) {
+@media screen and (min-width: $media-min-width-mobile) {
     .textPart {
-        max-width: 100%;
+        max-width: 500px;
 
         .title {
             text-align: center;
@@ -20,8 +20,9 @@
     }
 }
 
-@media(min-width:$media-min-width-tablet) {
+@media screen and (min-width: $media-min-width-tablet) {
     .textPart {
+        max-width: 340px;
 
         .title {
             text-align: left;
@@ -33,8 +34,9 @@
     }
 }
 
-@media(min-width:$media-min-width-desktop) {
+@media screen and (min-width: $media-min-width-desktop) {
     .textPart {
+        max-width: 400px;
 
         .title {
             font-size: 36px;
