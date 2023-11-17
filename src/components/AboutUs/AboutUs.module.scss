@@ -1,0 +1,17 @@
+@import '../../variable.scss';
+
+@media(min-width: $media-min-width-mobile) {
+    .pictureWrapper {}
+}
+
+@media(min-width:$media-min-width-tablet) {
+    .pictureWrapper {}
+}
+
+@media(min-width:$media-min-width-desktop) {
+    .pictureWrapper {
+        position: relative;
+        top: -50px;
+        left: -100px;
+    }
+}
