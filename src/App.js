@@ -3,6 +3,7 @@ import './App.css';
 import Header from 'components/Header';
 import Hero from 'components/Hero/Hero';
 import AboutUs from 'components/AboutUs';
+import Program from 'components/Program';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <AboutUs />
+      <Program />
     </HomePage>
   );
 }
