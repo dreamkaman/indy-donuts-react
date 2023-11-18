@@ -1,19 +1,23 @@
 @import '../../../variable.scss';
 
+
 @media screen and (min-width: $media-min-width-mobile) {
     .picture {
+        min-width: 280px;
         max-width: 500px;
     }
 }
 
 @media screen and (min-width: $media-min-width-tablet) {
     .picture {
+        min-width: 300px;
         max-width: 340px;
     }
 }
 
 @media screen and (min-width: $media-min-width-desktop) {
     .picture {
+        min-width: 400px;
         max-width: 520px;
     }
 }

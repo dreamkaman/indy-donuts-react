@@ -28,3 +28,12 @@ export interface IPictureProps {
     imgPath: string;
     imgAlt: string;
 }
+
+export interface IAboutEventItemProps {
+    imgPath: string,
+    imgAlt: string,
+    title: string,
+    text: string,
+    svgName: string,
+    svgClassName: string
+}

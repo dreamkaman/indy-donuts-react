@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: center;
 
-        max-width: 350px;
+        max-width: 550px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -28,5 +28,6 @@
 @media screen and (min-width: $media-min-width-desktop) {
     .section {
         max-width: 1000px;
+        margin-bottom: 20px;
     }
 }

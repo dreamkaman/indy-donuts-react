@@ -4,6 +4,8 @@ import Section from 'shared/components/Section';
 import img from 'images/png/donut-set.png';
 import Picture from 'shared/components/Picture/Picture';
 
+import s from './AboutUs.module.scss';
+
 const AboutUs = () => {
     const text = `Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world!
 
@@ -13,7 +15,9 @@ const AboutUs = () => {
 
     return (
         <Section>
-            <Picture imgPath={img} imgAlt={'donuts set'} />
+            <div className={s.pictureWrapper}>
+                <Picture imgPath={img} imgAlt={'donuts set'} />
+            </div>
             <Paragraph title={'About Us'} text={text} />
         </Section>
     );
