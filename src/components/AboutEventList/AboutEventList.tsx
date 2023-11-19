@@ -1,9 +1,9 @@
 import AboutEventItem from './AboutEventItem';
 
 import donut1 from 'images/png/donut-1.png';
-// import donut2 from 'images/png/donut-2.png';
-// import donut3 from 'images/png/donut-3.png';
-// import donut4 from 'images/png/donut-4.png';
+import donut2 from 'images/png/donut-2.png';
+import donut3 from 'images/png/donut-3.png';
+import donut4 from 'images/png/donut-4.png';
 
 import s from './AboutEventList.module.scss';
 
@@ -18,28 +18,28 @@ const AboutEventList = () => {
             svgClassName={s.chefHat}
         />
         <AboutEventItem
-            imgAlt=''
-            imgPath=''
-            title=''
-            text=''
-            svgName=''
-            svgClassName=''
+            imgAlt={'donut'}
+            imgPath={donut2}
+            title='Number of guests'
+            text='1 to 20'
+            svgName={'icon-people'}
+            svgClassName={s.iconPeople}
         />
         <AboutEventItem
-            imgAlt=''
-            imgPath=''
-            title=''
-            text=''
-            svgName=''
-            svgClassName=''
+            imgAlt={'donut'}
+            imgPath={donut3}
+            title={'Time of the event'}
+            text={'18:30 (2.5 hours)'}
+            svgName={'icon-clock'}
+            svgClassName={s.iconClock}
         />
         <AboutEventItem
-            imgAlt=''
-            imgPath=''
-            title=''
-            text=''
-            svgName=''
-            svgClassName=''
+            imgAlt={'donut'}
+            imgPath={donut4}
+            title={'The host speaks'}
+            text={'English, French'}
+            svgName={'icon-chat'}
+            svgClassName={s.iconChat}
         />
     </div>
 }
