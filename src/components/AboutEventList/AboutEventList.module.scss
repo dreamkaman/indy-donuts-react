@@ -5,11 +5,25 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        row-gap: 55px;
+
+        max-width: 320px;
+        min-width: 285px;
 
         .chefHat {
             width: 19px;
             height: 18px;
+        }
+
+        .iconPeople {
+            width: 20px;
+            height: 18px;
+        }
+
+        .iconClock {
+            width: 19px;
+            height: 19px;
         }
     }
 }
