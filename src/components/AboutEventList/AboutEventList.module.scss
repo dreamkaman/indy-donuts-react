@@ -11,6 +11,11 @@
         max-width: 320px;
         min-width: 285px;
 
+        .aboutEventListItem:nth-child(even) {
+            position: relative;
+            top: 30px;
+        }
+
         .chefHat {
             width: 19px;
             height: 18px;
@@ -25,9 +30,42 @@
             width: 19px;
             height: 19px;
         }
+
+        .iconChat {
+            width: 25px;
+            height: 17px;
+        }
     }
 }
 
 @media(min-width:$media-min-width-tablet) {}
 
-@media(min-width:$media-min-width-desktop) {}
+@media(min-width:$media-min-width-desktop) {
+    .aboutEventList {
+
+        row-gap: 55px;
+
+        max-width: 420px;
+        min-width: 360px;
+
+        .chefHat {
+            width: 19px;
+            height: 18px;
+        }
+
+        .iconPeople {
+            width: 20px;
+            height: 18px;
+        }
+
+        .iconClock {
+            width: 19px;
+            height: 19px;
+        }
+
+        .iconChat {
+            width: 25px;
+            height: 17px;
+        }
+    }
+}
