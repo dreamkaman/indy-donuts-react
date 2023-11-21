@@ -4,6 +4,7 @@ import Header from 'components/Header';
 import Hero from 'components/Hero/Hero';
 import AboutUs from 'components/AboutUs';
 import Program from 'components/Program';
+import Reviews from 'components/Reviews';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <AboutUs />
       <Program />
+      <Reviews />
     </HomePage>
   );
 }
