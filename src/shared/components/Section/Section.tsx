@@ -4,8 +4,8 @@ import { ISectionProps } from "types";
 
 import s from './Section.module.scss';
 
-const Section: FC<ISectionProps> = ({ children }) => {
-    return <section className={s.section}>
+const Section: FC<ISectionProps> = ({ children, className = "" }) => {
+    return <section className={className || s.section}>
         {children}
     </section>
 }
