@@ -1,10 +1,11 @@
 import Section from "shared/components/Section";
 import Slider from "shared/components/Slider";
 
+import { slides } from 'mokeData/reviews';
+
 const Reviews = () => {
     return <Section>
-        <p>Hello Reviews!</p>
-        <Slider slides={[]} />
+        <Slider slides={slides} />
     </Section>
 }
 

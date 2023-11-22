@@ -37,3 +37,15 @@ export interface IAboutEventItemProps {
     svgName: string,
     svgClassName: string
 }
+
+export interface ISliderProps {
+    slides: slide[];
+};
+
+export interface slide {
+    id: string,
+    image: string,
+    rating: number,
+    name: string,
+    feedback: string
+}
