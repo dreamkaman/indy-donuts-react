@@ -1,17 +1,18 @@
 import { Dispatch, ReactNode, SetStateAction } from "react";
 
 export interface IGetSvg {
-    name: string;
-    className: string;
+    name: string,
+    className: string,
 }
 
 export interface IButtonProps {
-    text: string;
-    type?: "button" | "submit" | "reset";
+    text: string,
+    type?: "button" | "submit" | "reset",
 }
 
 export interface ISectionProps {
-    children: ReactNode
+    children: ReactNode,
+    className?: string
 }
 
 export interface IReadMoreProps {
@@ -20,13 +21,14 @@ export interface IReadMoreProps {
 }
 
 export interface IParagraph {
-    title: string,
-    text: string;
+    title?: string,
+    text?: string,
+    classNameTitle?: string
 }
 
 export interface IPictureProps {
-    imgPath: string;
-    imgAlt: string;
+    imgPath: string,
+    imgAlt: string,
 }
 
 export interface IAboutEventItemProps {
@@ -39,8 +41,8 @@ export interface IAboutEventItemProps {
 }
 
 export interface ISliderProps {
-    slides: slide[];
-};
+    slides: slide[],
+}
 
 export interface slide {
     id: string,
@@ -48,4 +50,8 @@ export interface slide {
     rating: number,
     name: string,
     feedback: string
+}
+
+export interface IRatingProps {
+    rating: number,
 }

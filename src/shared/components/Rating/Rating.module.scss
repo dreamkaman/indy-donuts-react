@@ -1,0 +1,12 @@
+.ratingBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 136px;
+
+    .iconStar {
+        width: 24px;
+        height: 24px;
+    }
+}

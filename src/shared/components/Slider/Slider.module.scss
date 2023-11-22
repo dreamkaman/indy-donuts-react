@@ -7,6 +7,44 @@
         align-items: center;
         justify-content: center;
 
+        width: 100%;
+
+        .reviewsBlock {
+            min-width: 100%;
+
+            .reviewItem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                min-width: 100%;
+            }
+
+            .reviewItemImage {
+                width: 110px;
+                border-radius: 50%;
+            }
+
+            .reviewItemRating {}
+
+            .reviewItemName {
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: 464%;
+            }
+
+            .reviewItemFeedback {
+                text-align: center;
+            }
+
+            .reviewItemMain {}
+
+            .reviewItemSecondary {
+                display: none;
+            }
+        }
+
         .buttonsBlock {
             display: flex;
             align-items: center;
