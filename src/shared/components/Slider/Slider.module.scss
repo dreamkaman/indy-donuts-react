@@ -8,8 +8,12 @@
         justify-content: center;
 
         width: 100%;
+        margin-bottom: 30px;
 
         .reviewsBlock {
+            display: flex;
+            align-items: center;
+
             min-width: 100%;
 
             .reviewItem {
@@ -23,9 +27,8 @@
             .reviewItemImage {
                 width: 110px;
                 border-radius: 50%;
+                margin-bottom: 6px;
             }
-
-            .reviewItemRating {}
 
             .reviewItemName {
                 font-size: 14px;
@@ -35,10 +38,13 @@
             }
 
             .reviewItemFeedback {
+                margin-bottom: 30px;
                 text-align: center;
             }
 
-            .reviewItemMain {}
+            .reviewItemMain {
+                position: relative;
+            }
 
             .reviewItemSecondary {
                 display: none;
@@ -49,10 +55,55 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .sliderIndicator {
+                font-size: 14px;
+                color: $buttons-color;
+            }
         }
     }
 }
 
-@media(min-width:$media-min-width-tablet) {}
+@media(min-width:$media-min-width-tablet) {
+    .slider {
+        margin-bottom: 35px;
+
+        .reviewsBlock {
+
+            .reviewItem {
+                min-width: 30%;
+                width: 100%;
+            }
+
+            .reviewItemImage {}
+
+            .reviewItemName {}
+
+            .reviewItemFeedback {
+                max-width: 625px;
+                margin-bottom: 35px;
+            }
+
+            .reviewItemMain {
+                display: none;
+            }
+
+            .reviewItemSecondary {
+                display: flex;
+            }
+        }
+
+        .buttonsBlock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .sliderIndicator {
+                font-size: 14px;
+                color: $buttons-color;
+            }
+        }
+    }
+}
 
 @media(min-width:$media-min-width-desktop) {}

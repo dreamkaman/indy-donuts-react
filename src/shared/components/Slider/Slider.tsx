@@ -32,7 +32,7 @@ const Slider: FC<ISliderProps> = ({ slides }) => {
             </li>
             <li key={slides[currentPosition].id} className={`${s.reviewItem} ${s.reviewItemMain}`}>
                 <img src={slides[currentPosition].image} alt={slides[currentPosition].name} className={s.reviewItemImage} />
-                <div className={s.reviewItemRating}><Rating rating={slides[currentPosition].rating} /></div>
+                <Rating rating={slides[currentPosition].rating} />
                 <p className={s.reviewItemName}>{slides[currentPosition].name}</p>
                 <p className={s.reviewItemFeedback}>{slides[currentPosition].feedback}</p>
             </li>
@@ -44,7 +44,7 @@ const Slider: FC<ISliderProps> = ({ slides }) => {
         </ul>
         <div className={s.buttonsBlock}>
             <button type="button" onClick={decrement}>Back</button>
-            {<p>{`${currentPosition + 1}/${slidesCount}`}</p>}
+            {<p className={s.sliderIndicator}>{`${currentPosition + 1}/${slidesCount}`}</p>}
             <button type="button" onClick={increment}>Next</button>
         </div>
 
