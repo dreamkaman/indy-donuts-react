@@ -5,6 +5,7 @@ import Hero from 'components/Hero/Hero';
 import AboutUs from 'components/AboutUs';
 import Program from 'components/Program';
 import Reviews from 'components/Reviews';
+import Registration from 'components/Registration';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutUs />
       <Program />
       <Reviews />
+      <Registration />
     </HomePage>
   );
 }

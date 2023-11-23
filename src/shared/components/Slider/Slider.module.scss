@@ -11,8 +11,11 @@
         margin-bottom: 30px;
 
         .reviewsBlock {
+            position: relative;
+
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: space-between;
 
             min-width: 100%;
 
@@ -57,8 +60,26 @@
             justify-content: center;
 
             .sliderIndicator {
+                padding: 0 12px;
+
                 font-size: 14px;
                 color: $buttons-color;
+            }
+
+            .sliderButton {
+                display: flexbox;
+                align-items: center;
+                justify-content: center;
+
+                border: transparent;
+                background-color: transparent;
+
+                .arrow {
+                    width: 30px;
+                    height: 10px;
+
+                    fill: $buttons-color;
+                }
             }
         }
     }
@@ -69,6 +90,7 @@
         margin-bottom: 35px;
 
         .reviewsBlock {
+            height: 440px;
 
             .reviewItem {
                 min-width: 30%;
@@ -85,7 +107,13 @@
             }
 
             .reviewItemMain {
-                display: none;
+                position: absolute;
+                top: 30px;
+                display: flex;
+
+                .reviewItemImage {
+                    width: 186px;
+                }
             }
 
             .reviewItemSecondary {
