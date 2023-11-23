@@ -4,6 +4,7 @@ import { ISliderProps } from "types";
 
 import s from './Slider.module.scss';
 import Rating from "../Rating";
+import GetSvg from "../GetSvg";
 
 
 const Slider: FC<ISliderProps> = ({ slides }) => {
@@ -27,7 +28,7 @@ const Slider: FC<ISliderProps> = ({ slides }) => {
         <ul className={s.reviewsBlock}>
             <li key={slides[previousPosition].id} className={`${s.reviewItem} ${s.reviewItemSecondary}`}>
                 <img src={slides[previousPosition].image} alt={slides[previousPosition].name} className={s.reviewItemImage} />
-                <div className={s.reviewItemRating}>{slides[previousPosition].rating}</div>
+                <Rating rating={slides[previousPosition].rating} />
                 <p>{slides[previousPosition].name}</p>
             </li>
             <li key={slides[currentPosition].id} className={`${s.reviewItem} ${s.reviewItemMain}`}>
@@ -38,14 +39,18 @@ const Slider: FC<ISliderProps> = ({ slides }) => {
             </li>
             <li key={slides[nextPosition].id} className={`${s.reviewItem} ${s.reviewItemSecondary}`}>
                 <img src={slides[nextPosition].image} alt={slides[nextPosition].name} className={s.reviewItemImage} />
-                <div className={s.reviewItemRating}>{slides[nextPosition].rating}</div>
+                <Rating rating={slides[nextPosition].rating} />
                 <p>{slides[nextPosition].name}</p>
             </li>
         </ul>
         <div className={s.buttonsBlock}>
-            <button type="button" onClick={decrement}>Back</button>
+            <button type="button" onClick={decrement} className={s.sliderButton}>
+                <GetSvg name={"icon-arrow-left"} className={s.arrow} />
+            </button>
             {<p className={s.sliderIndicator}>{`${currentPosition + 1}/${slidesCount}`}</p>}
-            <button type="button" onClick={increment}>Next</button>
+            <button type="button" onClick={increment} className={s.sliderButton}>
+                <GetSvg name={"icon-arrow-right"} className={s.arrow} />
+            </button>
         </div>
 
 
