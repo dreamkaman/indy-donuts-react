@@ -1,0 +1,29 @@
+@import '../../variable.scss';
+
+
+@media(min-width: $media-min-width-mobile) {
+    .registrationSection {
+
+        .registrationTitle {
+            text-align: center;
+
+            font-family: $secondary-font-family;
+            font-weight: 400;
+            line-height: 270%;
+        }
+
+        .announceBlock {}
+
+        .inputsBlock {}
+    }
+}
+
+@media(min-width:$media-min-width-tablet) {}
+
+@media(min-width:$media-min-width-desktop) {
+    .registrationTitle {
+        font-size: 36px;
+
+        line-height: 180%;
+    }
+}
