@@ -55,3 +55,9 @@ export interface slide {
 export interface IRatingProps {
     rating: number,
 }
+
+export interface IInputProps {
+    inputType?: string,
+    placeholder: string,
+    className?: string
+}
