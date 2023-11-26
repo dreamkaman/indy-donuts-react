@@ -12,14 +12,49 @@
             line-height: 270%;
         }
 
-        .announceBlock {}
+        .registrationForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-        .inputsBlock {
-            .registrationInput {
-                display: block;
-                width: 100%;
-                border: none;
+            padding: 90px 12px 47px;
 
+            border-radius: 150px 150px 0 0;
+            background: #FFFFF9;
+            box-shadow: 4px 4px 4px 0px rgba(171, 129, 108, 0.15),
+                -4px -4px 4px 0px rgba(171, 129, 108, 0.15);
+
+            .announceBlock {
+                font-size: 18px;
+                font-weight: 500;
+
+                .eventTime {
+                    text-align: center;
+                }
+
+                .eventPlace {
+                    text-align: center;
+                }
+
+                .price {
+                    text-align: center;
+                }
+            }
+
+            .inputsBlock {
+                .inputsBlockTitle {
+                    text-align: center;
+                }
+
+                .registrationInputsList {
+
+                    .registrationInput {
+                        display: block;
+                        width: 100%;
+                        border: none;
+                    }
+                }
 
             }
         }
