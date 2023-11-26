@@ -58,6 +58,7 @@ export interface IRatingProps {
 
 export interface IInputProps {
     inputType?: string,
+    inputName: string,
     placeholder: string,
     className?: string
 }
