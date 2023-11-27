@@ -3,6 +3,7 @@ import Section from "shared/components/Section";
 
 import s from './Registration.module.scss';
 import Input from "shared/components/Input";
+import Button from "shared/components/Button";
 
 const Registration = () => {
     return <Section className={s.registrationSection}>
@@ -27,6 +28,7 @@ const Registration = () => {
                     </li>
                 </ul>
             </div>
+            <Button text={"Register"} type={'submit'} />
         </form>
 
     </Section>
