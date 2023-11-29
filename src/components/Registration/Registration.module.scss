@@ -107,6 +107,8 @@
 
         .registrationSectionWrapper {
             width: 100%;
+            max-width: 950px;
+
             min-height: 400px;
             background-image: url('../../images/png/donut.png'), url('../../images/png/confetti.png');
             background-size: 257px auto, 384px auto;
@@ -203,6 +205,8 @@
 
         .registrationSectionWrapper {
             width: 100%;
+            max-width: 1200px;
+
             min-height: 600px;
 
             background-image: url('../../images/png/donut.png'), url('../../images/png/confetti.png');
