@@ -8,13 +8,16 @@ import s from './Contact.module.scss';
 
 const Contact = () => {
     return <Section>
-        <Paragraph title={'Contact'} />
-        <form className={s.contactForm}>
-            <p className={s.contactFormTitle}>We will answer any question!</p>
-            <Input inputName={'email'} placeholder={'Email'} inputType={'email'} />
-            <Input inputName={'question'} placeholder={'Type your question'} />
-            <Button text={'Send'} type={'submit'} />
-        </form>
+        <div className={s.contactSectionWrapper}>
+            <Paragraph title={'Contact'} classNameTitle={s.contactSectionTitle} />
+            <form className={s.contactForm}>
+                <p className={s.contactFormTitle}>We will answer any question!</p>
+                <Input inputName={'email'} placeholder={'Email'} inputType={'email'} />
+                <Input inputName={'question'} placeholder={'Type your question'} />
+                <Button text={'Send'} type={'submit'} />
+            </form>
+        </div>
+
     </Section>
 }
 
