@@ -6,6 +6,7 @@ import AboutUs from 'components/AboutUs';
 import Program from 'components/Program';
 import Reviews from 'components/Reviews';
 import Registration from 'components/Registration';
+import Contact from 'components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Program />
       <Reviews />
       <Registration />
+      <Contact />
     </HomePage>
   );
 }
