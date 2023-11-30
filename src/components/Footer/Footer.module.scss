@@ -13,11 +13,33 @@
             justify-content: space-between;
 
             width: 100%;
+            max-width: 400px;
+
             margin-top: 30px;
 
-            .phone {}
+            .phone::before {
+                content: '';
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                margin-right: 2px;
+                background-image: url('../../images/svg/phone.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
 
-            .place {}
+            .place:before {
+                content: '';
+                display: inline-block;
+                width: 11px;
+                height: 14px;
+                margin-right: 2px;
+                background-image: url('../../images/svg/location.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         }
     }
 }
@@ -28,6 +50,8 @@
     .footer {
 
         .contactsBlock {
+            max-width: 600px;
+
             margin-top: 50px;
 
             .phone {}
@@ -41,6 +65,7 @@
     .footer {
 
         .contactsBlock {
+            max-width: none;
             margin-top: 35px;
 
             .phone {}
