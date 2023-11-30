@@ -7,6 +7,7 @@ import Program from 'components/Program';
 import Reviews from 'components/Reviews';
 import Registration from 'components/Registration';
 import Contact from 'components/Contact';
+import Footer from 'components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Reviews />
       <Registration />
       <Contact />
+      <Footer />
     </HomePage>
   );
 }

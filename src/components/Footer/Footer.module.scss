@@ -1,0 +1,51 @@
+@import '../../variable.scss';
+
+@media(min-width: $media-min-width-mobile) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .contactsBlock {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+            margin-top: 30px;
+
+            .phone {}
+
+            .place {}
+        }
+    }
+}
+
+
+
+@media(min-width:$media-min-width-tablet) {
+    .footer {
+
+        .contactsBlock {
+            margin-top: 50px;
+
+            .phone {}
+
+            .place {}
+        }
+    }
+}
+
+@media(min-width:$media-min-width-desktop) {
+    .footer {
+
+        .contactsBlock {
+            margin-top: 35px;
+
+            .phone {}
+
+            .place {}
+        }
+    }
+}

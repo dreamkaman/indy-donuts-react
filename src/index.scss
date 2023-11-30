@@ -86,7 +86,7 @@ nav {
 @media screen and (min-width: $media-min-width-mobile) {
     .container {
         max-width: $container-max-width-mobile;
-        padding: 0 $container-padding-mobile;
+        padding: 0 $container-padding-mobile 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -95,7 +95,7 @@ nav {
 @media screen and (min-width:$media-min-width-tablet) {
     .container {
         max-width: $container-max-width-tablet;
-        padding: 0 $container-padding-tablet;
+        padding: 0 $container-padding-tablet 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -104,7 +104,7 @@ nav {
 @media screen and (min-width:$media-min-width-desktop) {
     .container {
         max-width: $container-max-width-desktop;
-        padding: 0 $container-padding-desktop;
+        padding: 0 $container-padding-desktop 20px;
         margin-left: auto;
         margin-right: auto;
     }
