@@ -40,6 +40,21 @@
 
         .socialMediasListItem {
 
+            .iconTwitter {
+                width: 19px;
+                height: 19px;
+            }
+
+            .iconInstagram {
+                width: 19px;
+                height: 19px;
+            }
+
+            .iconFacebook {
+                width: 10px;
+                height: 19px;
+            }
+
             &:hover .iconTwitter,
             &:hover .iconInstagram,
             &:hover .iconFacebook {
