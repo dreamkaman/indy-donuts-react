@@ -21,7 +21,7 @@ const Program = () => {
 
     Come with your dear people and friends and you will spend an unforgettable time and will become a real professional in donuts cooking!
     `;
-    return <Section>
+    return <Section id={'program'}>
         <Paragraph title={'Program'} text={text} />
         <AboutEventList />
     </Section>

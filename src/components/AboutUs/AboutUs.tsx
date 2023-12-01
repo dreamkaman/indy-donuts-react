@@ -14,7 +14,7 @@ const AboutUs = () => {
                 We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!`
 
     return (
-        <Section>
+        <Section id="aboutUs">
             <div className={s.pictureWrapper}>
                 <Picture imgPath={img} imgAlt={'donuts set'} />
             </div>

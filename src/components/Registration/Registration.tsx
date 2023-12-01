@@ -6,7 +6,7 @@ import Input from "shared/components/Input";
 import Button from "shared/components/Button";
 
 const Registration = () => {
-    return <Section className={s.registrationSection}>
+    return <Section id={'registration'} className={s.registrationSection}>
         <div className={s.registrationSectionWrapper}>
             <Paragraph title={"Registration"} classNameTitle={s.registrationTitle} />
             <form className={s.registrationForm}>
