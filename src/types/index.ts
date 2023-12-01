@@ -12,6 +12,7 @@ export interface IButtonProps {
 
 export interface ISectionProps {
     children: ReactNode,
+    id: string,
     className?: string
 }
 

@@ -7,7 +7,7 @@ import Paragraph from "shared/components/Paragraph";
 import s from './Reviews.module.scss';
 
 const Reviews = () => {
-    return <Section className={s.reviewSection}>
+    return <Section id={'reviews'} className={s.reviewSection}>
         <Paragraph title={'Review'} classNameTitle={s.title} />
         <Slider slides={slides} />
     </Section>

@@ -8,7 +8,7 @@ const slides = [
     image: john,
     rating: 4,
     name: 'John',
-    feedback: 'John was good but I expected more.',
+    feedback: 'Ema was good but I had expected more.',
   },
   {
     id: 'e342we224e',

@@ -7,7 +7,7 @@ import s from './Contact.module.scss';
 
 
 const Contact = () => {
-    return <Section className={s.contactSection}>
+    return <Section id={'contacts'} className={s.contactSection}>
         <div className={s.contactSectionWrapper}>
             <Paragraph title={'Contact'} classNameTitle={s.contactSectionTitle} />
             <form className={s.contactForm}>
