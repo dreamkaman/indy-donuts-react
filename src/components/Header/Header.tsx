@@ -38,17 +38,17 @@ const Header = () => {
         {isShown && <Modal>
             <GetSvg name={'icon-logo'} className={s.logoModal} />
             <nav>
-                <ul className={s.menuModal}>
-                    <li>
-                        <a href='#aboutUs'>About Us</a>
+                <ul className={s.menuModal} >
+                    <li onClick={showModal}>
+                        <a href='#aboutUs' >About Us</a>
                     </li>
-                    <li>
+                    <li onClick={showModal}>
                         <a href='#program'>Program</a>
                     </li>
-                    <li>
+                    <li onClick={showModal}>
                         <a href='#reviews'>Reviews</a>
                     </li>
-                    <li>
+                    <li onClick={showModal}>
                         <a href='#contacts'>Contacts</a>
                     </li>
                 </ul>

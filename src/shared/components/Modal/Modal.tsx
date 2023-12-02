@@ -1,14 +1,13 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import { createPortal } from "react-dom";
+
+import { IModalProps } from "types";
 
 import s from './Modal.module.scss';
 
 
-const modalRoot = document.querySelector('#modal-root');
 
-interface IModalProps {
-    children?: ReactNode;
-}
+const modalRoot = document.querySelector('#modal-root');
 
 const Modal: FC<IModalProps> = ({ children }) => {
     return createPortal(<div className={s.modalBackDrop}>
