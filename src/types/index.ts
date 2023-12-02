@@ -63,3 +63,12 @@ export interface IInputProps {
     placeholder: string,
     className?: string
 }
+
+export interface IModalProps {
+    children: ReactNode;
+}
+
+export interface ILinkButtonProps {
+    path: string,
+    text: string
+}
