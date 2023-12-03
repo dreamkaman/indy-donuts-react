@@ -18,6 +18,13 @@
 
         .mainText {
             white-space: pre-line;
+            margin-bottom: 10px;
+        }
+
+        .less {
+            height: 250px;
+
+            overflow-y: hidden;
         }
 
     }
@@ -32,7 +39,9 @@
             text-align: left;
         }
 
-        .mainText {}
+        .less {
+            height: 300px;
+        }
 
 
     }
@@ -53,6 +62,9 @@
             font-size: 18px;
         }
 
+        .less {
+            height: auto;
+        }
 
     }
 }
