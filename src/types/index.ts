@@ -1,4 +1,5 @@
 import { Dispatch, ReactNode, SetStateAction } from "react";
+import { UseFormRegister } from "react-hook-form";
 
 export interface IGetSvg {
     name: string,
@@ -57,11 +58,18 @@ export interface IRatingProps {
     rating: number,
 }
 
+export type RegisterFormData = {
+    userName: string;
+    phoneNumber: string;
+    email: string;
+}
+
 export interface IInputProps {
     inputType?: string,
-    inputName: string,
+    inputName: "email" | "userName" | "phoneNumber",
     placeholder: string,
-    className?: string
+    className?: string,
+    register?: UseFormRegister<RegisterFormData>,
 }
 
 export interface IModalProps {
@@ -71,4 +79,10 @@ export interface IModalProps {
 export interface ILinkButtonProps {
     path: string,
     text: string
+}
+
+export interface IRegistrationInputs {
+    userName: string;
+    phoneNumber: string;
+    email: string
 }
