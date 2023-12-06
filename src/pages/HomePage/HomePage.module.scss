@@ -14,14 +14,14 @@
 @media screen and (min-width: $media-min-width-mobile) {
     .homePage {
         background-position: bottom -35px right -25px, top -40px left -30px, top center, bottom -100px center;
-        background-size: 113px auto, 130px auto, contain, contain;
+        background-size: 113px auto, 130px auto, 100% 460px, 100% 1215px;
     }
 }
 
 @media screen and (min-width: $media-min-width-tablet) {
     .homePage {
         background-position: bottom -38px right -60px, top -35px left 254px, top center, bottom -100px center;
-        background-size: 207px auto, 378px auto, contain, contain;
+        background-size: 207px auto, 378px auto, 100% 620px, 100% 1260px;
     }
 }
 
@@ -34,6 +34,6 @@
             url('../../images/svg/bg-bottom.svg');
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
         background-position: top 163px left -122px, bottom -134px right -43px, top -170px right -75px, top center, bottom -100px center;
-        background-size: 264px auto, 362px auto, 795px auto, contain, contain;
+        background-size: 264px auto, 362px auto, 795px auto, 100% 1035px, 100% 1600px;
     }
 }
