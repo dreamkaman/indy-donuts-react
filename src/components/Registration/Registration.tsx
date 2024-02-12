@@ -25,7 +25,7 @@ const schema = yup
 
 const Registration = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
     });
 
@@ -45,9 +45,9 @@ const Registration = () => {
         })
     }, [errors]);
 
-    const onSubmit: SubmitHandler<IRegistrationInputs> = (data, event) => {
+    const onSubmit: SubmitHandler<IRegistrationInputs> = (data) => {
         console.log(data)
-        event.target.reset();
+        reset();
     };
 
 
