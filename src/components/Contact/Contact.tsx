@@ -21,7 +21,7 @@ const schema = yup
 
 
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
     });
 
@@ -40,7 +40,10 @@ const Contact = () => {
         })
     }, [errors]);
 
-    const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
+    const onSubmit: SubmitHandler<FormData> = (data) => {
+        console.log(data);
+        reset();
+    };
 
     return <Section id={'contacts'} className={s.contactSection}>
         <div className={s.contactSectionWrapper}>
