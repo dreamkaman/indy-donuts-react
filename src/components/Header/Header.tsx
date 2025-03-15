@@ -20,16 +20,16 @@ const Header = () => {
             </div>
             <nav>
                 <ul className={s.menu}>
-                    <li>
+                    <li className={s.menuItem}>
                         <a href='#aboutUs'>About Us</a>
                     </li>
-                    <li>
+                    <li className={s.menuItem}>
                         <a href='#program'>Program</a>
                     </li>
-                    <li>
+                    <li className={s.menuItem}>
                         <a href='#reviews'>Reviews</a>
                     </li>
-                    <li>
+                    <li className={s.menuItem}>
                         <a href='#contacts'>Contacts</a>
                     </li>
                 </ul>
