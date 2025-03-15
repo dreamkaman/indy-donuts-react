@@ -43,16 +43,19 @@
             .iconTwitter {
                 width: 19px;
                 height: 19px;
+                transition: $transition-for-all;
             }
 
             .iconInstagram {
                 width: 19px;
                 height: 19px;
+                transition: $transition-for-all;
             }
 
             .iconFacebook {
                 width: 10px;
                 height: 19px;
+                transition: $transition-for-all;
             }
 
             &:hover .iconTwitter,
