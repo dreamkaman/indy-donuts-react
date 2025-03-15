@@ -28,9 +28,19 @@
         .menu {
             display: none;
 
-            a {
-                white-space: nowrap;
+            .menuItem {
+                border-bottom: 2px solid transparent;
+                transition: $transition-for-all;
+
+                a {
+                    white-space: nowrap;
+                }
+
+                &:hover {
+                    border-color: $accent-color;
+                }
             }
+
         }
     }
 
@@ -44,7 +54,6 @@
     .menuModal {
 
         li {
-
             &:not(:last-child) {
                 margin-bottom: 45px;
             }
